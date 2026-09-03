@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Membuat tampilan website menyesuaikan ukuran layar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Informasi Wisata Indonesia</title>
+
+    <!-- Menghubungkan HTML dengan file CSS external -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--
+        HEADER
+        Digunakan untuk menampilkan judul utama
+        dan deskripsi singkat website.
+    -->
+    <header>
+        <h1>Informasi Wisata Indonesia</h1>
+        <p>Jelajahi Keindahan Destinasi Wisata Indonesia</p>
+    </header>
+
+
+    <!--
+        NAVIGATION
+        Digunakan untuk membuat menu navigasi
+        pada halaman website.
+    -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#destinasi">Destinasi</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!--
+        MAIN
+        Container utama menggunakan CSS Grid.
+        Di dalamnya terdapat Article dan Sidebar.
+    -->
+    <main class="container">
+
+
+        <!--
+            ARTICLE
+            Berisi content utama tentang informasi
+            wisata Indonesia.
+        -->
+        <article>
+
+            <!-- Bagian informasi destinasi -->
+            <section id="destinasi">
+
+                <h2>Destinasi Wisata Indonesia</h2>
+
+                <p>
+                    Indonesia memiliki banyak destinasi wisata yang
+                    menarik dan indah. Mulai dari wisata alam,
+                    budaya, sejarah, hingga wisata bahari dapat
+                    ditemukan di berbagai daerah Indonesia.
+                </p>
+
+
+                <!-- Destinasi Wisata Bali -->
+                <h3>Bali</h3>
+
+                <img
+                    src="images/bali.jpg"
+                    alt="Pemandangan wisata Bali"
+                >
+
+                <p>
+                    Bali merupakan salah satu destinasi wisata
+                    terkenal di Indonesia. Bali memiliki pantai,
+                    budaya, dan pemandangan alam yang menarik.
+                </p>
+
+
+                <!-- Destinasi Candi Borobudur -->
+                <h3>Candi Borobudur</h3>
+
+                <img
+                    src="images/borobudur.jpg"
+                    alt="Candi Borobudur"
+                >
+
+                <p>
+                    Candi Borobudur merupakan salah satu destinasi
+                    wisata sejarah dan budaya yang terkenal di
+                    Indonesia.
+                </p>
+
+
+                <!-- Destinasi Raja Ampat -->
+                <h3>Raja Ampat</h3>
+
+                <img
+                    src="images/raja-ampat.jpg"
+                    alt="Pemandangan Raja Ampat"
+                >
+
+                <p>
+                    Raja Ampat terkenal dengan keindahan laut,
+                    pulau-pulau, dan kehidupan bawah lautnya.
+                </p>
+
+            </section>
+
+
+            <!--
+                VIDEO
+                Video disimpan di dalam folder images.
+                controls digunakan agar pengguna dapat
+                memutar, menjeda, dan mengatur volume video.
+            -->
+            <section>
+
+                <h2>Video Wisata Indonesia</h2>
+
+                <video controls width="100%">
+
+                    <!--
+                        File video berada di dalam folder images.
+                    -->
+                    <source
+                        src="images/video.mp4"
+                        type="video/mp4"
+                    >
+
+                    <!-- Pesan jika browser tidak mendukung video -->
+                    Browser Anda tidak mendukung video.
+
+                </video>
+
+            </section>
+
+
+            <!--
+                GALERI
+                Challenge:
+                Menambahkan section Galeri ke dalam website.
+            -->
+            <section id="galeri">
+
+                <h2>Galeri Wisata</h2>
+
+                <div class="gallery">
+
+                    <!-- Gambar Galeri 1 -->
+                    <img
+                        src="images/bali.jpg"
+                        alt="Galeri wisata Bali"
+                    >
+
+                    <!-- Gambar Galeri 2 -->
+                    <img
+                        src="images/borobudur.jpg"
+                        alt="Galeri Candi Borobudur"
+                    >
+
+                    <!-- Gambar Galeri 3 -->
+                    <img
+                        src="images/raja-ampat.jpg"
+                        alt="Galeri Raja Ampat"
+                    >
+
+                </div>
+
+            </section>
+
+        </article>
+
+
+        <!--
+            ASIDE
+            Sidebar digunakan untuk memberikan
+            informasi tambahan dan menampilkan peta.
+        -->
+        <aside>
+
+            <h2>Informasi Lokasi</h2>
+
+            <p>
+                Berikut adalah contoh lokasi wisata Indonesia
+                yang dapat dikunjungi.
+            </p>
+
+
+            <!--
+                IFRAME
+                Digunakan untuk menampilkan Google Maps
+                langsung di dalam halaman website.
+            -->
+            <iframe
+                src="https://www.google.com/maps?q=Indonesia&output=embed"
+                width="100%"
+                height="300"
+                style="border:0;"
+                loading="lazy">
+            </iframe>
+
+
+            <!-- Daftar destinasi populer -->
+            <h3>Destinasi Populer</h3>
+
+            <ul>
+                <li>Bali</li>
+                <li>Yogyakarta</li>
+                <li>Raja Ampat</li>
+                <li>Lombok</li>
+            </ul>
+
+        </aside>
+
+    </main>
+
+
+    <!--
+        FOOTER
+        Digunakan sebagai bagian paling bawah
+        dari halaman website.
+    -->
+    <footer id="contact">
+
+        <p>
+            &copy; 2026 Informasi Wisata Indonesia
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

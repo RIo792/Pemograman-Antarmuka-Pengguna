@@ -1,0 +1,82 @@
+/* Mengatur tampilan dasar halaman */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333333;
+}
+
+/* Mengatur tampilan Header */
+header {
+    padding: 40px;
+    text-align: center;
+    background: #dbeafe;
+    border-bottom: 3px solid #2563eb;
+}
+
+/* Mengatur heading pada h1 */
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Mengatur paragraf pada header */
+header p {
+    font-size: 16px;
+}
+
+/* Mengatur tampilan Navigation */
+nav {
+    padding: 15px;
+    text-align: center;
+    background: #1e293b;
+}
+
+/* Mengatur link pada Navigation */
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Memberikan efek ketika mouse diarahkan ke menu */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Mengatur bagian Article */
+article {
+    padding: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mengatur heading pada Article */
+article h2 {
+    color: #2563eb;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 8px;
+}
+
+/* Mengatur daftar keahlian */
+article ul {
+    line-height: 2;
+}
+
+/* Mengatur link pada Article */
+article a {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Mengatur tampilan Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #1e293b;
+    color: white;
+}
