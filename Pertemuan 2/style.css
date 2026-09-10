@@ -11,13 +11,12 @@ body {
 
 /*
     HEADER
-    Mengatur tampilan bagian header.
 */
 header {
     padding: 35px;
     text-align: center;
-    background: #dbeafe;
-    border-bottom: 4px solid #2563eb;
+    background: #fff3cd;
+    border-bottom: 4px solid #f59e0b;
 }
 
 
@@ -40,12 +39,11 @@ header p {
 
 /*
     NAVIGATION
-    Mengatur tampilan menu navigasi.
 */
 nav {
     padding: 15px;
     text-align: center;
-    background: #1e293b;
+    background: #f59e0b;
 }
 
 
@@ -61,12 +59,7 @@ nav a {
 
 
 /*
-    CHALLENGE:
     Menambahkan efek hover pada menu.
-    
-    Ketika kursor diarahkan ke menu,
-    ukuran teks akan berubah dan memiliki
-    garis bawah.
 */
 nav a:hover {
     text-decoration: underline;
@@ -76,21 +69,6 @@ nav a:hover {
 
 /*
     CONTAINER
-    
-    CHALLENGE:
-    Contoh dari dosen menggunakan:
-    
-    grid-template-columns: 2fr 1fr;
-    
-    Kemudian diubah menjadi:
-    
-    grid-template-columns: 3fr 1fr;
-    
-    Artinya content mendapatkan 3 bagian
-    sedangkan sidebar mendapatkan 1 bagian.
-    
-    Dengan demikian content menjadi lebih
-    lebar daripada sidebar.
 */
 .container {
     display: grid;
@@ -114,8 +92,7 @@ aside {
 
 
 /*
-    Mengatur warna heading pada Article
-    dan Sidebar.
+    Mengatur warna heading pada Article dan Sidebar.
 */
 article h2,
 aside h2 {
@@ -124,8 +101,7 @@ aside h2 {
 
 
 /*
-    Mengatur ukuran maksimum gambar dan video
-    agar tidak melebihi container.
+    Mengatur ukuran maksimum gambar dan video agar tidak melebihi container.
 */
 img,
 video {
@@ -147,12 +123,6 @@ article img {
 
 /*
     GALERI
-    
-    CHALLENGE:
-    Menambahkan layout untuk Galeri.
-    
-    repeat(3, 1fr) berarti Galeri dibuat
-    menjadi 3 kolom dengan ukuran yang sama.
 */
 .gallery {
     display: grid;
@@ -162,8 +132,7 @@ article img {
 
 
 /*
-    Mengatur ukuran gambar yang terdapat
-    pada Galeri.
+    Mengatur ukuran gambar yang terdapat pada Galeri.
 */
 .gallery img {
     width: 100%;
@@ -174,8 +143,7 @@ article img {
 
 
 /*
-    Memberikan efek ketika kursor diarahkan
-    ke gambar Galeri.
+    Memberikan efek ketika kursor diarahkan ke gambar Galeri.
 */
 .gallery img:hover {
     transform: scale(1.03);
@@ -183,8 +151,7 @@ article img {
 
 
 /*
-    Mengatur jarak antara Sidebar
-    dengan Google Maps.
+    Mengatur jarak antara Sidebar dengan Google Maps.
 */
 aside iframe {
     margin-top: 10px;
@@ -193,24 +160,19 @@ aside iframe {
 
 /*
     FOOTER
-    Mengatur tampilan bagian footer.
 */
 footer {
     padding: 20px;
     text-align: center;
-    background: #1e293b;
+    background: #f59e0b;
     color: white;
     margin-top: 20px;
 }
 
 
 /*
-    RESPONSIVE
-    
-    Jika ukuran layar kurang dari 768px,
-    layout multi-kolom akan berubah menjadi
-    satu kolom agar lebih mudah digunakan
-    pada perangkat dengan layar kecil.
+    Jika ukuran layar kurang dari 768px, layout multi-kolom akan berubah menjadi
+    satu kolom agar lebih mudah digunakan pada perangkat dengan layar kecil.
 */
 @media screen and (max-width: 768px) {
 
@@ -223,8 +185,7 @@ footer {
 
 
     /*
-        Galeri juga menjadi satu kolom
-        pada layar kecil.
+        Galeri juga menjadi satu kolom pada layar kecil.
     */
     .gallery {
         grid-template-columns: 1fr;
