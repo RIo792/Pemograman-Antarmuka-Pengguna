@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+/* HEADER */
+header {
+    background-color: #f1c40f;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #d4ac0d;
+    padding: 15px;
+
+    display: flex;
+
+    /* Membuat semua menu sejajar di tengah */
+    justify-content: center;
+
+    /* Membuat posisi vertikal semua menu sama */
+    align-items: center;
+
+    gap: 10px;
+}
+
+/* Link pada navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 5px;
+}
+
+/* Hover menu */
+nav a:hover {
+    background-color: #f1c40f;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+    display: flex;
+
+    /* Membuat isi dropdown sejajar */
+    align-items: center;
+}
+
+/*Tampilan submenu sebelum di-hover*/
+.dropdown-content {
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    background-color: white;
+
+    min-width: 180px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    z-index: 10;
+
+    text-align: left;
+}
+
+/* Link pada submenu */
+.dropdown-content a {
+    display: block;
+
+    color: #333333;
+
+    padding: 12px;
+
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hover pada submenu */
+.dropdown-content a:hover {
+    background-color: #f7dc6f;
+
+    color: #333333;
+}
+
+/* CONTAINER */
+.container {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 20px;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 20px;
+}
+
+/* Article dan aside */
+article,
+aside {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGE */
+img {
+    max-width: 100%;
+}
+
+/* VIDEO */
+video {
+    max-width: 100%;
+}
+
+/* Gambar utama */
+.gambar-utama {
+    display: block;
+
+    margin: 15px auto;
+
+    border-radius: 8px;
+}
+
+/* Gambar galeri */
+.gambar-galeri {
+    border-radius: 8px;
+
+    transition: transform 0.3s;
+}
+
+/* Hover gambar */
+.gambar-galeri:hover {
+    transform: scale(1.03);
+}
+
+/* IFRAME */
+iframe {
+    max-width: 100%;
+
+    border: 0;
+
+    border-radius: 8px;
+}
+
+/* LINK */
+.link-destinasi {
+    color: #b7950b;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+/* Hover link */
+.link-destinasi:hover {
+    text-decoration: underline;
+
+    color: #7d6608;
+}
+
+/* FORM */
+form {
+    display: grid;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+/* Input, select, textarea dan button */
+input,
+select,
+textarea,
+button {
+    padding: 10px;
+
+    font-family: Arial, sans-serif;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    box-sizing: border-box;
+}
+
+/* Input dan textarea */
+input,
+select,
+textarea {
+    width: 100%;
+}
+
+/* Ketika input dipilih */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #f1c40f;
+
+    box-shadow: 0 0 4px rgba(241, 196, 15, 0.5);
+}
+
+/* RADIO & CHECKBOX */
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.radio-group input,
+.checkbox-group input {
+    width: auto;
+}
+
+
+/* TEXTAREA */
+
+textarea {
+    height: 100px;
+
+    resize: vertical;
+}
+
+
+/* BUTTON */
+button {
+    width: 150px;
+
+    background-color: #d4ac0d;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+/* Hover tombol */
+button:hover {
+    background-color: #f1c40f;
+
+    transform: translateY(-2px);
+}
+
+
+/* TABLE */
+.table-container {
+    overflow-x: auto;
+
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+/* Border dan isi tabel */
+th,
+td {
+    border: 1px solid #cccccc;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+/* Header tabel */
+thead th {
+    background-color: #d4ac0d;
+
+    color: white;
+}
+
+
+/* Warna baris selang-seling */
+tbody tr:nth-child(even) {
+    background-color: #fffbea;
+}
+
+
+/* Hover pada baris tabel */
+tbody tr:hover {
+    background-color: #f7dc6f;
+
+    transition: 0.2s;
+}
+
+
+/* Jika tabel belum memiliki data */
+.data-kosong {
+    text-align: center;
+
+    font-style: italic;
+
+    color: #777777;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #d4ac0d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-top: 20px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .dropdown-content {
+        position: static;
+
+        width: 100%;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+}

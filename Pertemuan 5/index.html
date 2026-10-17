@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Informasi Wisata Indonesia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Informasi Wisata Indonesia</h1>
+    <p>Kenali destinasi wisata menarik di Indonesia</p>
+</header>
+
+
+<!-- NAVIGATION -->
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <div class="dropdown">
+
+        <a href="profil.html" class="dropbtn">
+            Destinasi
+        </a>
+
+        <div class="dropdown-content">
+
+            <a href="profil.html#bali">
+                Bali
+            </a>
+
+            <a href="profil.html#yogyakarta">
+                Yogyakarta
+            </a>
+
+            <a href="profil.html#rajaampat">
+                Raja Ampat
+            </a>
+
+        </div>
+
+    </div>
+
+    <a href="#galeri">
+        Galeri
+    </a>
+
+    <a href="#contact">
+        Contact
+    </a>
+
+    <a href="#harga">
+        Daftar Harga
+    </a>
+
+</nav>
+
+<main class="container">
+
+    <!-- ARTICLE -->
+    <article>
+
+        <h2>Destinasi Wisata Indonesia</h2>
+
+                <video controls width="100%">
+
+                    <source
+                        src="images/video.mp4"
+                        type="video/mp4"
+                    >
+
+                    <!-- Pesan jika browser tidak mendukung video -->
+                    Browser Anda tidak mendukung video.
+
+                </video>
+
+            </section>
+
+        <p>
+            Indonesia memiliki banyak tempat wisata yang menarik,
+            mulai dari pantai, pegunungan, hingga tempat bersejarah.
+            Salah satu destinasi yang terkenal adalah Bali.
+        </p>
+
+        <p>
+            Temukan informasi tentang beberapa destinasi wisata
+            menarik di Indonesia.
+        </p>
+
+        <a href="profil.html" class="link-destinasi">
+            Lihat informasi destinasi lainnya
+        </a>
+
+        <!-- GALERI -->
+        <section id="galeri">
+
+            <h2>Galeri</h2>
+
+            <img src="images/bali.jpg"
+                 alt="Galeri Wisata Indonesia"
+                 class="gambar-galeri">
+
+        </section>
+
+        <!-- FORM PENDAFTARAN -->
+        <section id="contact">
+
+            <h2>Form Pendaftaran Wisata</h2>
+
+            <form>
+
+                <!-- Nama -->
+                <label for="nama">
+                    Nama
+                </label>
+
+                <input type="text"
+                       id="nama"
+                       name="nama"
+                       placeholder="Masukkan nama"
+                       required>
+
+
+                <!-- Email -->
+                <label for="email">
+                    Email
+                </label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Masukkan email"
+                       required>
+
+
+                <!-- Pilihan Destinasi -->
+                <label for="pilihan">
+                    Pilihan Destinasi
+                </label>
+
+                <select id="pilihan"
+                        name="pilihan"
+                        required>
+
+                    <option value="">
+                        -- Pilih Destinasi --
+                    </option>
+
+                    <option value="Bali">
+                        Bali
+                    </option>
+
+                    <option value="Yogyakarta">
+                        Yogyakarta
+                    </option>
+
+                    <option value="Raja Ampat">
+                        Raja Ampat
+                    </option>
+
+                </select>
+
+                <!-- Jenis Paket -->
+                <label>
+                    Jenis Paket
+                </label>
+
+                <div class="radio-group">
+
+                    <label>
+                        <input type="radio"
+                               name="paket"
+                               value="Reguler"
+                               required>
+
+                        Reguler
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="paket"
+                               value="Premium">
+
+                        Premium
+                    </label>
+
+                </div>
+
+                <!-- Fasilitas Tambahan -->
+                <label>
+                    Fasilitas Tambahan
+                </label>
+
+                <div class="checkbox-group">
+
+                    <label>
+                        <input type="checkbox"
+                               name="fasilitas"
+                               value="Transportasi">
+
+                        Transportasi
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="fasilitas"
+                               value="Hotel">
+
+                        Hotel
+                    </label>
+
+                    <label>
+                        <input type="checkbox"
+                               name="fasilitas"
+                               value="Tour Guide">
+
+                        Tour Guide
+                    </label>
+
+                </div>
+
+
+                <!-- Pesan -->
+                <label for="pesan">
+                    Pesan
+                </label>
+
+                <textarea id="pesan"
+                          name="pesan"
+                          placeholder="Masukkan pesan atau catatan"
+                          required></textarea>
+
+
+                <!-- Tombol -->
+                <button type="submit">
+                    Daftar
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- DAFTAR HARGA -->
+        <section id="harga">
+
+            <h2>Daftar Harga Paket Wisata</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>No</th>
+                            <th>Destinasi</th>
+                            <th>Paket</th>
+                            <th>Harga</th>
+                            <th>Fasilitas</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Bali</td>
+                            <td>Reguler</td>
+                            <td>Rp 1.500.000</td>
+                            <td>
+                                Transportasi + Penginapan
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Bali</td>
+                            <td>Premium</td>
+                            <td>Rp 2.500.000</td>
+                            <td>
+                                Transportasi + Hotel + Tour Guide
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Yogyakarta</td>
+                            <td>Reguler</td>
+                            <td>Rp 1.200.000</td>
+                            <td>
+                                Transportasi + Penginapan
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Yogyakarta</td>
+                            <td>Premium</td>
+                            <td>Rp 2.000.000</td>
+                            <td>
+                                Transportasi + Hotel + Tour Guide
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Raja Ampat</td>
+                            <td>Reguler</td>
+                            <td>Rp 3.500.000</td>
+                            <td>
+                                Transportasi + Penginapan
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>Raja Ampat</td>
+                            <td>Premium</td>
+                            <td>Rp 5.000.000</td>
+                            <td>
+                                Transportasi + Hotel + Tour Guide
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </article>
+
+    <!-- ASIDE -->
+    <aside>
+
+        <h3>Lokasi Wisata</h3>
+
+        <p>
+            Contoh lokasi wisata yang dapat dikunjungi adalah
+            Bali, Indonesia.
+        </p>
+
+        <iframe
+            src="https://www.google.com/maps?q=Bali%2C%20Indonesia&output=embed"
+            width="100%"
+            height="300">
+        </iframe>
+
+        <h3>Informasi</h3>
+
+        <p>
+            Silakan mengisi form untuk melakukan pendaftaran
+            perjalanan wisata.
+        </p>
+
+        <p>
+            Lihat daftar harga paket wisata yang tersedia
+            sebelum melakukan pendaftaran.
+        </p>
+
+    </aside>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © 2026 Informasi Wisata Indonesia
+    </p>
+
+</footer>
+
+</body>
+</html>

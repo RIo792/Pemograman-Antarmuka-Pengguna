@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #8b0b1a;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+nav {
+    background-color: #5f0712;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+article, aside {
+    background-color: white;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100px;
+}
+
+footer {
+    background-color: #5f0712;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
